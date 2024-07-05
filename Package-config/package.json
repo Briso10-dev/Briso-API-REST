@@ -1,7 +1,7 @@
 {
-  "name": "beginner",
+  "name": "express_js",
   "version": "1.0.0",
-  "description": "This aims at making me strong in nodejs",
+  "description": "Rest_API",
   "main": "index.mjs",
   "scripts": {
     "start": "nodemon index.mjs"
@@ -9,8 +9,6 @@
   "author": "Briso",
   "license": "ISC",
   "dependencies": {
-    "body": "^5.1.0",
-    "body-parser": "^1.20.2",
     "chalk": "^5.3.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
