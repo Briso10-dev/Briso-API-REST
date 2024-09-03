@@ -4,7 +4,7 @@
   "description": "Rest_API",
   "main": "index.mjs",
   "scripts": {
-    "start": "nodemon index.mjs"
+    "start": "nodemon app.mjs"
   },
   "author": "Briso",
   "license": "ISC",
