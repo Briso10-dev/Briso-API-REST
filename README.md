@@ -20,7 +20,7 @@ docker build -t node_server .
 ```bash
  docker run node_server
 ```
-## NB : In each case "node_server" refers to the name of the building image
+#### NB : In each case "node_server" refers to the name of the building image
 
 ## Authors
 - [@Briso10-dev](https://github.com/Briso10-dev)
