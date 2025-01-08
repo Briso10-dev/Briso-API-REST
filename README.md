@@ -1,7 +1,7 @@
 
 # Project Title
 
-Implementing a RestAPI showing CRUD operations in Nodejs
+Implementing a RestAPI showing CRUD operations in Nodejs-Expressjs
 
 ## Tech Stack
 
@@ -23,4 +23,4 @@ docker build -t node_server .
 #### NB : In each case "node_server" refers to the name of the building image
 
 ## Authors
-- [@Briso10-dev](https://github.com/Briso10-dev)
+- [@Kouam Brice](https://github.com/Briso10-dev)

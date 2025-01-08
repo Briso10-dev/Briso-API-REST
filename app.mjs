@@ -22,21 +22,20 @@ let chiens = [
 // CRUD OPERATIONS
 // GET METHOD : 1. to get the list of object
 app.get("/chiens",(req,res)=>{
-    return res.status(200).json({chiens})
+    return res.status(200).json({chiens: chiens})
 })
 //2. To get a particular item object
 app.get("/chiens/:Id",(req,res)=>{
     const Id = parseInt(req.params.Id)
     let rechercher = (Id,tableau)=>{
         for(let i = 0; i<tableau.length; i++ ){
-            console.log(Id,tableau[i].id)
             if(tableau[i].id === Id)
                 return tableau[i]
     }
         return "Pas de chiens disponible"
     }
     const message = rechercher(Id,chiens)
-    return res.status(200).json({msg:message})
+    return res.status(200).json({chiens:message})
 })
 
 // POST method
@@ -48,7 +47,7 @@ app.post("/chiens",(req,res)=>{
     chien.age = age
     chien.race = race
     chiens.push(chien)
-    return res.status(201).json({msg:chiens})
+    return res.status(201).json({chiens:chiens})
 })
 //PUT method
 app.put("/chiens/:id",(req,res)=>{
@@ -61,7 +60,7 @@ app.put("/chiens/:id",(req,res)=>{
         chiens[i].nom = nom
         chiens[i].age = age
         chiens[i].race = race
-        return res.status(201).json({msg:chiens})
+        return res.status(201).json({chiens:chiens})
         }
     }
     return res.status(201).json({msg:"identifiant non trouvee"})
