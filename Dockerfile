@@ -1,9 +1,9 @@
 FROM node:20-alpine
 
-# Set the working directory
+# Set the working directory in your container
 WORKDIR /app
 
-# Copier les fichier []
+# Copy the source code to that same WD
 COPY . .
 
 # Install the dependencies
