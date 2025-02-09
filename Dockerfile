@@ -1,15 +1,11 @@
 FROM node:20-alpine
 
-# Set the working directory in your container
-WORKDIR /app
+WORKDIR /app  # Setting the working directory in the container
 
-# Copy the source code to that same WD
-COPY . .
+COPY . ./
 
-# Install the dependencies
 RUN npm install
 
-# Expose the port the app will run on
-# EXPOSE ${PORT}
+EXPOSE 3000  
 
-CMD [ "npm", "start" ]
+CMD ["npm", "start"]  # Runs 'npm start' when the container starts
